@@ -1,21 +1,22 @@
 const container = document.getElementById("container");
 
-for(let i = 0; i < 16 * 16; i++) {
-  const square = document.createElement("div");
-  square.classList.add("square");
-  container.appendChild(square);
+function createGrid(size) {
+  container.innerHTML = "";
+  const squareSize = container.clientWidth / size;
+
+  for (let i = 0; i < size * size; i++) {
+    const square = document.createElement("div");
+    square.classList.add("square");
+
+    square.style.flexBasis = `${squareSize}px`;
+    square.style.height = `${squareSize}px`;
+
+    square.addEventListener("mouseenter", () => {
+      square.classList.add("hovered");
+    });
+
+    container.appendChild(square);
+  }
 }
 
-const gridTiles = document.querySelectorAll(".square");
-
-gridTiles.forEach(tile => {
-  tile.addEventListener("mouseenter", () => {
-    // tile.style.backgroundColor = "pink";
-    tile.classList.add("hovered");
-  });
-
-  tile.addEventListener("mouseleave", () => {
-    // tile.style.backgroundColor = "initial";
-    // tile.classList.remove("hovered");
-  })
-});
+createGrid(16);
