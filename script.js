@@ -50,3 +50,20 @@ function gridValue() {
     alert("Sorry your value must be between 1 and 100.");
   }
 }
+
+const backgroundOptions = document.querySelectorAll(".option");
+
+backgroundOptions.forEach(option => {
+  option.addEventListener("mouseenter", () => {
+    option.classList.add("hovered");
+  });
+
+  option.addEventListener("mouseleave", () => {
+    option.classList.remove("hovered");
+  });
+
+  option.addEventListener("click", () => {
+    const color = option.dataset.color;
+    container.style.backgroundColor = color;
+  });
+});

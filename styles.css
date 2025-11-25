@@ -84,6 +84,10 @@ input::placeholder {
   background-color: #555555;
 }
 
+.hovered {
+  border-color: blue;
+}
+
 .colorPicker {
   display: flex;
   flex-direction: column;
