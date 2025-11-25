@@ -32,9 +32,18 @@ function createGrid(size) {
 
 createGrid(16);
 
+const inputElement = document.getElementById("userInput");
+
+inputElement.addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    gridValue();
+  }
+});
+
 function gridValue() {
-  const inputElement = document.getElementById("userInput");
   const inputValue = parseInt(inputElement.value);
+
   if (inputValue >= 1 && inputValue <= 100) {
     createGrid(inputValue);
   } else {

@@ -47,10 +47,6 @@ body {
   gap: 5px;
 }
 
-/* #new-grid-btn {
-  
-} */
-
 .colorPicker {
   display: flex;
   flex-direction: column;
@@ -74,9 +70,9 @@ body {
   border: 1px solid lightgray;
 }
 
-/* .square {
-  border: 0.5px solid black;
-} */
+.square {
+  border: 0.5px solid lightgray;
+}
 
 .square.hovered {
   background-color: palevioletred;
