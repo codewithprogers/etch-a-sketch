@@ -11,8 +11,24 @@ function createGrid(size) {
     square.style.flexBasis = `${squareSize}px`;
     square.style.height = `${squareSize}px`;
 
-    square.addEventListener("mouseenter", () => {
-      square.classList.add("hovered");
+    let mouseDown = false;
+    document.body.addEventListener("mousedown", () => mouseDown = true);
+    document.body.addEventListener("mouseup", () => mouseDown = false);
+
+    const colorPicker = document.getElementById("myColorPicker");
+    const squares = document.querySelectorAll(".square");
+
+    squares.forEach(square => {
+      square.addEventListener("mouseenter", function () {
+        if (mouseDown) {
+          square.style.backgroundColor = colorPicker.value; 
+        }
+        // const selectedColor = colorPicker.value;
+      });
+      
+      square.addEventListener("mousedown", function() {
+        square.style.backgroundColor = colorPicker.value;
+      });
     });
 
     container.appendChild(square);
