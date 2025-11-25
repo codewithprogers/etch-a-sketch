@@ -11,11 +11,50 @@ html, body {
 body {
   display: flex;
   min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 #sidebar {
-  width: 100px;
-  background-color: black;
+  width: 200px;
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  bottom: 80px;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 15px;
+}
+
+.sidebar .menu {
+  font-size: 1rem;
+}
+
+.sidebar .item {
+  font-size: 0.8rem;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* #new-grid-btn {
+  
+} */
+
+.colorPicker {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .wrapper {
@@ -27,16 +66,12 @@ body {
   gap: 20px;
 }
 
-#new-grid-btn {
-  padding: 0 0.5rem;
-}
-
 #container {
   display: flex;
   flex-wrap: wrap;
   width: 480px;
   height: 480px;
-  border: 1px solid black;
+  border: 1px solid lightgray;
 }
 
 /* .square {
