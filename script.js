@@ -31,22 +31,3 @@ function createGrid(size) {
 }
 
 createGrid(16);
-
-const inputElement = document.getElementById("userInput");
-
-inputElement.addEventListener("keyup", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    gridValue();
-  }
-});
-
-function gridValue() {
-  const inputValue = parseInt(inputElement.value);
-
-  if (inputValue >= 1 && inputValue <= 100) {
-    createGrid(inputValue);
-  } else {
-    alert("Sorry your value must be between 1 and 100.");
-  }
-}

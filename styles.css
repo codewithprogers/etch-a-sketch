@@ -24,21 +24,25 @@ body {
   bottom: 80px;
   border: 1px solid lightgray;
   border-radius: 0.5rem;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 18px;
   padding: 15px;
+  font-family: "Helvetica", sans-serif;
+  color: #555555;
 }
 
 .sidebar .menu {
   font-size: 1rem;
+  font-weight: 400;
 }
 
-.sidebar .item {
-  font-size: 0.8rem;
+.title {
+  font-size: 0.7rem;
 }
 
 .value {
@@ -47,10 +51,56 @@ body {
   gap: 5px;
 }
 
+#userInput {
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
+  padding: 1.5px
+}
+
+input::placeholder {
+  color: #555555;
+}
+
+.bgOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 60px;
+  height: 30px;
+  margin-top: 5px;
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
+}
+
+.option {
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
+}
+
+.optTwo {
+  background-color: #555555;
+}
+
 .colorPicker {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+#myColorPicker {
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
+}
+
+.fill {
+  width: 60px;
+  height: 20px;
+  margin-top: 5px;
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
 }
 
 .wrapper {
