@@ -64,24 +64,38 @@ input::placeholder {
 .bgOptions {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 6px;
-  width: 60px;
+  width: 81px;
   height: 30px;
   margin-top: 5px;
+  padding-left: 5px;
   border: 1px solid lightgray;
   border-radius: 0.2rem;
 }
 
 .option {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border: 1px solid lightgray;
   border-radius: 0.2rem;
 }
 
 .optTwo {
   background-color: #555555;
+}
+
+.divider {
+  width: 1px;
+  height: 50%;
+  background-color: lightgray;
+}
+
+.choice {
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
 }
 
 .hovered {

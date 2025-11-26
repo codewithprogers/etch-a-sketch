@@ -52,6 +52,7 @@ function gridValue() {
 }
 
 const backgroundOptions = document.querySelectorAll(".option");
+const choiceBox = document.querySelector(".choice");
 
 backgroundOptions.forEach(option => {
   option.addEventListener("mouseenter", () => {
@@ -64,6 +65,8 @@ backgroundOptions.forEach(option => {
 
   option.addEventListener("click", () => {
     const color = option.dataset.color;
+
     container.style.backgroundColor = color;
+    choiceBox.style.backgroundColor = color;
   });
 });
