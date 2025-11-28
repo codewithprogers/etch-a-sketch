@@ -191,6 +191,24 @@ input::placeholder {
   border: none;
 }
 
+.actionBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+.act {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
+}
+
 .wrapper {
   flex: 1;
   display: flex;
