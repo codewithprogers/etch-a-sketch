@@ -55,14 +55,13 @@ const backgroundOptions = document.querySelectorAll(".option");
 const choiceBox = document.querySelector(".choice");
 
 backgroundOptions.forEach(option => {
-  option.addEventListener("mouseenter", () => {
-    option.classList.add("hovered");
+  option.addEventListener("click", () => {
+    backgroundOptions.forEach(other => {
+      other.style.borderColor = "";
+    });
+    option.style.borderColor = "navy";   
   });
-
-  option.addEventListener("mouseleave", () => {
-    option.classList.remove("hovered");
-  });
-
+  
   option.addEventListener("click", () => {
     const color = option.dataset.color;
 
