@@ -99,7 +99,7 @@ input::placeholder {
 }
 
 .hovered {
-  border-color: blue;
+  border-color: navy;
 }
 
 .colorPicker {
@@ -114,11 +114,81 @@ input::placeholder {
 }
 
 .fill {
-  width: 60px;
-  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
   margin-top: 5px;
+}
+
+.fillBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
   border: 1px solid lightgray;
   border-radius: 0.2rem;
+}
+
+.empty {
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  border-radius: 0.1rem;
+}
+
+.grid {
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  border-radius: 0.1rem;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.grid::before,
+.grid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: black;
+}
+
+.grid div,
+.grid span {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: black;
+}
+
+.grid::before {
+  left: 2.5px;
+}
+
+.grid::after {
+  left: 6.5px;
+}
+
+.grid div:nth-child(1) {
+  top: 2.5px;
+}
+
+.grid div:nth-child(2) {
+  top: 6.5px;
+}
+
+.square {
+  border: 0.5px solid lightgray;
+}
+
+.hide-grid {
+  border: none;
 }
 
 .wrapper {
@@ -136,12 +206,4 @@ input::placeholder {
   width: 480px;
   height: 480px;
   border: 1px solid lightgray;
-}
-
-.square {
-  border: 0.5px solid lightgray;
-}
-
-.square.hovered {
-  background-color: palevioletred;
 }

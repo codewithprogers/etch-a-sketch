@@ -70,3 +70,26 @@ backgroundOptions.forEach(option => {
     choiceBox.style.backgroundColor = color;
   });
 });
+
+const gridFillOptions = document.querySelectorAll(".fillBox");
+
+gridFillOptions.forEach(fill => {
+  fill.addEventListener("click", () => {
+    gridFillOptions.forEach(other => {
+      other.style.backgroundColor = "";
+    });
+    fill.style.backgroundColor = "#d6d0f5";
+
+    const containerSquares = document.querySelectorAll(".square");
+
+    if (fill.classList.contains("fillOff")) {
+      containerSquares.forEach(square => {
+        square.classList.add("hide-grid");
+      });
+    } else if (fill.classList.contains("fillOn")) {
+      containerSquares.forEach(square => {
+        square.classList.remove("hide-grid");
+      })
+    }
+  });
+});
