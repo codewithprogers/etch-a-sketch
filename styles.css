@@ -134,14 +134,14 @@ input::placeholder {
 .empty {
   width: 12px;
   height: 12px;
-  border: 1px solid black;
+  border: 1px solid #3A3A3E;
   border-radius: 0.1rem;
 }
 
 .grid {
   width: 12px;
   height: 12px;
-  border: 1px solid black;
+  border: 1px solid #3A3A3E;
   border-radius: 0.1rem;
   position: relative;
   box-sizing: border-box;
@@ -154,7 +154,7 @@ input::placeholder {
   top: 0;
   bottom: 0;
   width: 1px;
-  background: black;
+  background: #3A3A3E;
 }
 
 .grid div,
@@ -164,7 +164,7 @@ input::placeholder {
   left: 0;
   right: 0;
   height: 1px;
-  background: black;
+  background: #3A3A3E;
 }
 
 .grid::before {
@@ -215,7 +215,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #3A3A3E;
 }
 
 .undo-icon {
@@ -229,7 +229,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #3A3A3E;
 }
 
 .redo-icon {
