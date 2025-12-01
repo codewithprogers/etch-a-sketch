@@ -19,10 +19,6 @@ container.addEventListener("mousedown", (e) => {
 });
 
 window.addEventListener("mouseup", () => {
-  if (mouseDown && paintedThisStroke) {
-    saveState();
-  }
-
   mouseDown = false;
   paintedThisStroke = false;
 });
@@ -94,12 +90,18 @@ function createGrid(size) {
 
     container.appendChild(square);
   }
-
-  saveState();
-  redoStack = [];
 }
 
 createGrid(16);
+
+const clear = document.getElementById("clear");
+
+clear.addEventListener("click", () => {
+  saveState();
+
+  const squares = [...document.querySelectorAll(".square")];
+  squares.forEach(square => square.style.backgroundColor = "");
+});
 
 const inputElement = document.getElementById("userInput");
 
@@ -115,6 +117,7 @@ function gridValue() {
 
   if (inputValue >= 1 && inputValue <= 100) {
     createGrid(inputValue);
+    redoStack = [];
   } else {
     alert("Sorry your value must be between 1 and 100.");
   }
