@@ -225,6 +225,20 @@ input::placeholder {
   height: 16px;
 }
 
+#clear {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  stroke: #3A3A3E;
+}
+
+.clear-icon {
+  width: 18px;
+  height: 18px;
+}
+
 .wrapper {
   flex: 1;
   display: flex;
