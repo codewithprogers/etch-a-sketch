@@ -52,6 +52,7 @@ body {
 }
 
 #userInput {
+  width: 87px;
   border: 1px solid lightgray;
   border-radius: 0.2rem;
   padding: 1.5px
