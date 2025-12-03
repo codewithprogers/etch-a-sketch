@@ -7,89 +7,89 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="sidebar">
-    <div class="sidebar">
-
-      <h2 class="menu">Menu</h2>
-      
-      <div class="value">
-        <h3 class="title">Value</h3>
-        <input type="value" id="userInput" placeholder="Value 1-100">
-      </div>
-
-      <div class="background">
-        <h3 class="title">Background</h3>
-        <div class="bgOptions">
-          <div class="option optOne" data-color="#ffffff"></div>
-          <div class="option optTwo" data-color="#555555"></div>
-          <div class="divider"></div>
-          <div class="choice"></div>
-        </div>
-      </div>
-
-      <div class="colorPicker">
-        <h3 class="title">Color</h3>
-        <input type="color" id="myColorPicker" name="myColorPicker" value="#ff0000">
-      </div>
-
-      <div class="gridToggle">
-        <h3 class="title">Grid fill</h3>
-        <div class="fill">
-
-          <div class="fillBox fillOff">
-            <div class="empty"></div>
-          </div>
-
-          <div class="fillBox fillOn">
-            <div class="grid">
-              <div></div>
-              <div></div>
-            </div>
-          </div>
+  <div class="main">
+    <div class="wrapper">
+      <div id="sidebar">
+        <div class="sidebar">
           
+          <div class="value">
+            <h3 class="title">Value</h3>
+            <input type="value" id="userInput" placeholder="Enter 1-100">
+          </div>
+
+          <div class="background">
+            <h3 class="title">Background</h3>
+            <div class="bgOptions">
+              <div class="option optOne" data-color="#ffffff"></div>
+              <div class="option optTwo" data-color="#555555"></div>
+              <div class="divider"></div>
+              <div class="choice"></div>
+            </div>
+          </div>
+
+          <div class="colorPicker">
+            <h3 class="title">Color</h3>
+            <input type="color" id="myColorPicker" name="myColorPicker" value="#ff0000">
+          </div>
+
+          <div class="gridToggle">
+            <h3 class="title">Grid fill</h3>
+            <div class="fill">
+
+              <div class="fillBox fillOff">
+                <div class="empty"></div>
+              </div>
+
+              <div class="fillBox fillOn">
+                <div class="grid">
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="action">
+            <h3 class="title">Action</h3>
+            <div class="actionBox">
+              
+              <div class="act">
+                <div id="undo">
+                  <svg class="undo-icon" viewBox="0 0 24 24">
+                      <path fill="currentColor" stroke="currentColor" d="M16.23,8.83H4.76l4.14-2.64c.18-.11.23-.35.12-.52-.11-.18-.35-.23-.52-.12l-5.38,3.43c-.11.07-.17.19-.17.32s.07.25.17.32l5.38,3.43c.06.04.13.06.2.06.12,0,.25-.06.32-.18.11-.18.06-.41-.12-.52l-4.14-2.63h11.46c2.14,0,3.89,1.74,3.89,3.89s-1.74,3.89-3.89,3.89h-1.75c-.26,0-.47.21-.47.47s.21.47.47.47h1.75c2.67,0,4.83-2.17,4.83-4.83s-2.17-4.83-4.83-4.83Z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="act">
+                <div id="redo">
+                  <svg class="redo-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" stroke="currentColor" d="M7.77,8.83h11.46s-4.14-2.64-4.14-2.64c-.18-.11-.23-.35-.12-.52.11-.18.35-.23.52-.12l5.38,3.43c.11.07.17.19.17.32,0,.13-.07.25-.17.32l-5.38,3.43c-.06.04-.13.06-.2.06-.12,0-.25-.06-.32-.18-.11-.18-.06-.41.12-.52l4.14-2.63H7.77c-2.14,0-3.89,1.74-3.89,3.89s1.74,3.89,3.89,3.89h1.75c.26,0,.47.21.47.47,0,.26-.21.47-.47.47h-1.75c-2.67,0-4.83-2.17-4.83-4.83s2.17-4.83,4.83-4.83Z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="act">
+                <div id="clear">
+                  <svg class="clear-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M15.7,19.9h-7.4c-.83,0-1.51-.62-1.58-1.44l-1.11-11.73c-.01-.13.03-.27.12-.36.09-.1.22-.16.35-.16h11.83c.13,0,.26.06.35.16.09.1.13.23.12.36l-1.11,11.73c-.07.8-.75,1.43-1.56,1.44h-.01ZM6.6,7.17l1.06,11.21c.03.33.3.58.64.58h7.39c.33,0,.61-.25.64-.58l1.06-11.21H6.6Z"/>
+                    <path fill="currentColor" d="M18.79,7.17H5.21c-.26,0-.48-.21-.48-.48s.21-.48.48-.48h13.58c.26,0,.47.21.47.48s-.21.48-.47.48Z"/>
+                    <path fill="currentColor" d="M13.93,7.06h-3.86c-.21,0-.38-.17-.38-.38v-3.28c0-.21.17-.38.38-.38h3.86c.21,0,.38.17.38.38v3.28c0,.21-.17.38-.38.38ZM10.44,6.31h3.11v-2.53h-3.11v2.53Z"/>
+                    <path fill="currentColor" d="M10.07,17.04c-.26,0-.48-.21-.48-.47v-7.12c0-.26.21-.48.48-.48s.48.21.48.48v7.12c0,.26-.21.47-.48.47Z"/>
+                    <path fill="currentColor" d="M13.93,17.04c-.26,0-.47-.21-.47-.47v-7.12c0-.26.21-.48.47-.48s.47.21.47.48v7.12c0,.26-.21.47-.47.47Z"/>
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="action">
-        <h3 class="title">Action</h3>
-        <div class="actionBox">
-          
-          <div class="act">
-            <div id="undo">
-              <svg class="undo-icon" viewBox="0 0 24 24">
-                  <path fill="currentColor" stroke="currentColor" d="M16.23,8.83H4.76l4.14-2.64c.18-.11.23-.35.12-.52-.11-.18-.35-.23-.52-.12l-5.38,3.43c-.11.07-.17.19-.17.32s.07.25.17.32l5.38,3.43c.06.04.13.06.2.06.12,0,.25-.06.32-.18.11-.18.06-.41-.12-.52l-4.14-2.63h11.46c2.14,0,3.89,1.74,3.89,3.89s-1.74,3.89-3.89,3.89h-1.75c-.26,0-.47.21-.47.47s.21.47.47.47h1.75c2.67,0,4.83-2.17,4.83-4.83s-2.17-4.83-4.83-4.83Z"/>
-              </svg>
-            </div>
-          </div>
-
-          <div class="act">
-            <div id="redo">
-              <svg class="redo-icon" viewBox="0 0 24 24">
-                <path fill="currentColor" stroke="currentColor" d="M7.77,8.83h11.46s-4.14-2.64-4.14-2.64c-.18-.11-.23-.35-.12-.52.11-.18.35-.23.52-.12l5.38,3.43c.11.07.17.19.17.32,0,.13-.07.25-.17.32l-5.38,3.43c-.06.04-.13.06-.2.06-.12,0-.25-.06-.32-.18-.11-.18-.06-.41.12-.52l4.14-2.63H7.77c-2.14,0-3.89,1.74-3.89,3.89s1.74,3.89,3.89,3.89h1.75c.26,0,.47.21.47.47,0,.26-.21.47-.47.47h-1.75c-2.67,0-4.83-2.17-4.83-4.83s2.17-4.83,4.83-4.83Z"/>
-              </svg>
-            </div>
-          </div>
-
-          <div class="act">
-            <div id="clear">
-              <svg class="clear-icon" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M15.7,19.9h-7.4c-.83,0-1.51-.62-1.58-1.44l-1.11-11.73c-.01-.13.03-.27.12-.36.09-.1.22-.16.35-.16h11.83c.13,0,.26.06.35.16.09.1.13.23.12.36l-1.11,11.73c-.07.8-.75,1.43-1.56,1.44h-.01ZM6.6,7.17l1.06,11.21c.03.33.3.58.64.58h7.39c.33,0,.61-.25.64-.58l1.06-11.21H6.6Z"/>
-                <path fill="currentColor" d="M18.79,7.17H5.21c-.26,0-.48-.21-.48-.48s.21-.48.48-.48h13.58c.26,0,.47.21.47.48s-.21.48-.47.48Z"/>
-                <path fill="currentColor" d="M13.93,7.06h-3.86c-.21,0-.38-.17-.38-.38v-3.28c0-.21.17-.38.38-.38h3.86c.21,0,.38.17.38.38v3.28c0,.21-.17.38-.38.38ZM10.44,6.31h3.11v-2.53h-3.11v2.53Z"/>
-                <path fill="currentColor" d="M10.07,17.04c-.26,0-.48-.21-.48-.47v-7.12c0-.26.21-.48.48-.48s.48.21.48.48v7.12c0,.26-.21.47-.48.47Z"/>
-                <path fill="currentColor" d="M13.93,17.04c-.26,0-.47-.21-.47-.47v-7.12c0-.26.21-.48.47-.48s.47.21.47.48v7.12c0,.26-.21.47-.47.47Z"/>
-              </svg>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
+      <div id="container"></div>
     </div>
-  </div>
-
-  <div class="wrapper">
-    <div id="container"></div>
   </div>
 
   <script src="script.js"></script>

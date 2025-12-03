@@ -9,40 +9,46 @@ html, body {
 }
 
 body {
-  display: flex;
+  margin: 0;
   min-height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
 }
 
 #sidebar {
-  width: 200px;
   position: absolute;
-  left: 30px;
-  top: 80px;
-  bottom: 80px;
+  top: 0;
+  left: auto;
+  right: 100%;
+  margin-right: 40px;
+  width: 110px;
+  height: 295px;
   border: 1px solid lightgray;
   border-radius: 0.5rem;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding: 15px;
+  gap: 15px;
   font-family: "Helvetica", sans-serif;
   color: #555555;
 }
 
-.sidebar .menu {
-  font-size: 1rem;
-  font-weight: 400;
-}
-
 .title {
   font-size: 0.7rem;
+  font-weight: 400;
 }
 
 .value {
@@ -52,6 +58,7 @@ body {
 }
 
 #userInput {
+  font-size: 12px;
   width: 87px;
   border: 1px solid lightgray;
   border-radius: 0.2rem;
@@ -241,12 +248,10 @@ input::placeholder {
 }
 
 .wrapper {
-  flex: 1;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
 }
 
 #container {
