@@ -131,7 +131,7 @@ backgroundOptions.forEach(option => {
     backgroundOptions.forEach(other => {
       other.style.borderColor = "";
     });
-    option.style.borderColor = "navy";   
+    option.style.borderColor = "#4f1fff";   
   });
   
   option.addEventListener("click", () => {
