@@ -14,12 +14,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fafefa;
+}
+
+.frame {
+  width: 900px;
+  height: 650px;
+  border: 1px solid #f5f5f9;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.main {
+  margin-top: 50px;
 }
 
 .header {
   position: absolute;
   bottom: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -30,88 +46,82 @@ body {
 .game {
   font-family: "Press Start 2P", sans-serif;
   font-size: 2rem;
-  color: #3A3A3E;
+  color: #6965d4;
 }
 
 .color {
   margin-top: 5px;
+  font-size: 1rem;
+  color: #020060;
 }
 
-.letters {
-  font-size: 2rem;
-}
-
-.c {
+/* .p {
   color: red;
 }
 
-.o {
+.i {
   color: orange;
 }
 
-.l {
+.x {
   color: #ffdb29;
 }
 
-.oTwo {
+.e {
   color: #a6ff00;
 }
 
-.r {
+.l {
   color: #2986ff;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-}
+} */
 
 #sidebar {
   position: absolute;
-  top: 0;
+  top: 20%;
   left: auto;
   right: 100%;
-  margin-right: 40px;
+  margin-right: 45px;
   width: 110px;
-  height: 295px;
-  border: 1px solid lightgray;
-  /* border-radius: 0.5rem; */
+  height: 280px;
+  border: 1px solid #f5f5f9;
+  border-radius: 0.5rem;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  font-family: "Helvetica Neue", sans-serif;
-  color: #555555;
+  gap: 12px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .title {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 400;
+  color: #5b5b5e;
 }
 
 .value {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
 }
 
 #userInput {
   font-size: 12px;
   width: 87px;
-  border: 1px solid lightgray;
-  /* border-radius: 0.2rem; */
+  border: 1px solid #ececf4;
+  border-radius: 0.2rem;
   padding: 1.5px
 }
 
 input::placeholder {
-  color: #555555;
+  color: #5b5b5e;
 }
 
 .bgOptions {
@@ -123,47 +133,43 @@ input::placeholder {
   height: 30px;
   margin-top: 5px;
   padding-left: 5px;
-  border: 1px solid lightgray;
-  /* border-radius: 0.2rem; */
+  border: 1px solid #ececf4;
+  border-radius: 0.2rem;
 }
 
 .option {
   width: 15px;
   height: 15px;
-  border: 1px solid lightgray;
-  /* border-radius: 0.2rem; */
+  border: 1px solid #ececf4;
+  border-radius: 0.2rem;
 }
 
 .optTwo {
-  background-color: #555555;
+  background-color: #7f7f7f;
 }
 
 .divider {
   width: 1px;
   height: 50%;
-  background-color: lightgray;
+  background-color: #ececf4;
 }
 
 .choice {
   width: 20px;
   height: 20px;
-  border: 1px solid lightgray;
-  /* border-radius: 0.2rem; */
-}
-
-.hovered {
-  border-color: navy;
+  border: 1px solid #ececf4;
+  border-radius: 0.2rem;
 }
 
 .colorPicker {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
 }
 
 #myColorPicker {
-  border: 1px solid lightgray;
-  /* border-radius: 0.2rem; */
+  border: 1px solid #ececf4;
+  border-radius: 0.2rem;
 }
 
 .fill {
@@ -171,7 +177,7 @@ input::placeholder {
   align-items: center;
   justify-content: flex-start;
   gap: 6px;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .fillBox {
@@ -180,22 +186,22 @@ input::placeholder {
   justify-content: center;
   width: 25px;
   height: 25px;
-  border: 1px solid lightgray;
-  /* border-radius: 0.2rem; */
+  border: 1px solid #ececf4;
+  border-radius: 0.2rem;
 }
 
 .empty {
   width: 12px;
   height: 12px;
-  border: 1px solid #3A3A3E;
-  /* border-radius: 0.1rem; */
+  border: 1px solid #5b5b5e;
+  border-radius: 0.1rem;
 }
 
 .grid {
   width: 12px;
   height: 12px;
-  border: 1px solid #3A3A3E;
-  /* border-radius: 0.1rem; */
+  border: 1px solid #5b5b5e;
+  border-radius: 0.1rem;
   position: relative;
   box-sizing: border-box;
 }
@@ -207,7 +213,7 @@ input::placeholder {
   top: 0;
   bottom: 0;
   width: 1px;
-  background: #3A3A3E;
+  background: #5b5b5e;
 }
 
 .grid div,
@@ -217,7 +223,7 @@ input::placeholder {
   left: 0;
   right: 0;
   height: 1px;
-  background: #3A3A3E;
+  background: #5b5b5e;
 }
 
 .grid::before {
@@ -237,7 +243,7 @@ input::placeholder {
 }
 
 .square {
-  border: 0.5px solid lightgray;
+  border: 0.5px solid #ececf4;
 }
 
 .hide-grid {
@@ -249,7 +255,7 @@ input::placeholder {
   align-items: center;
   justify-content: flex-start;
   gap: 6px;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .act {
@@ -258,8 +264,8 @@ input::placeholder {
   justify-content: center;
   width: 25px;
   height: 25px;
-  border: 1px solid lightgray;
-  /* border-radius: 0.2rem; */
+  border: 1px solid #ececf4;
+  border-radius: 0.2rem;
 }
 
 #undo,
@@ -269,7 +275,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #3A3A3E;
+  color: #5b5b5e;
 }
 
 .undo-icon,
@@ -284,7 +290,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  stroke: #3A3A3E;
+  stroke: #5b5b5e;
 }
 
 .clear-icon {
@@ -304,5 +310,6 @@ input::placeholder {
   flex-wrap: wrap;
   width: 480px;
   height: 480px;
-  border: 1px solid lightgray;
+  border: 1px solid #ececf4;
+  background-color: white;
 }

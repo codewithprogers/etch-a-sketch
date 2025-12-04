@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Etch-a-Sketch</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="frame">
   <div class="main">
     <div class="wrapper">
       <div class="header">
@@ -16,7 +17,7 @@
           <span class="game">Etch-a-Sketch</span>
           <br>
           <div class="color">
-          <span class="c letters">C</span><span class="o color">O</span><span class="l color">L</span><span class="oTwo color">O</span><span class="r color">R</span>
+          <span class="p color">P</span><span class="i color">i</span><span class="x color">x</span><span class="e color">e</span><span class="l color">l</span>
           </div>
         </h1>
       </div>
@@ -33,7 +34,7 @@
             <h3 class="title">Background</h3>
             <div class="bgOptions">
               <div class="option optOne" data-color="#ffffff"></div>
-              <div class="option optTwo" data-color="#555555"></div>
+              <div class="option optTwo" data-color="#7f7f7f"></div>
               <div class="divider"></div>
               <div class="choice"></div>
             </div>
@@ -41,7 +42,7 @@
 
           <div class="colorPicker">
             <h3 class="title">Color</h3>
-            <input type="color" id="myColorPicker" name="myColorPicker" value="#ff0000">
+            <input type="color" id="myColorPicker" name="myColorPicker" value="#ffffff">
           </div>
 
           <div class="gridToggle">
@@ -102,6 +103,7 @@
 
       <div id="container"></div>
     </div>
+  </div>
   </div>
 
   <script src="script.js"></script>
